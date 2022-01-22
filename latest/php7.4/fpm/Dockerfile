@@ -102,9 +102,9 @@ RUN { \
 
 RUN set -eux; \
 	version='5.8.3'; \
-	sha1='3be7ed4dc6f46fe98271b974c88153640e95ad49'; \
+	sha1='e872958c8f6e4ba0b89344050bd57d36c49b2ae5'; \
 	\
-	curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; \
+	curl -o wordpress.tar.gz -fL "https://es.wordpress.org/latest-es_ES.tar.gz"; \
 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; \
 	\
 # upstream tarballs include ./wordpress/ so this gives us /usr/src/wordpress
